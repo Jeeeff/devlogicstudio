@@ -1,0 +1,333 @@
+/* ==============================
+   DevLogic Studio - Folha de Estilos Completa
+   ============================== */
+
+/* === VARIÁVEIS DE DESIGN === */
+:root {
+  --bg-dark: #0B101D; /* Azul muito escuro do fundo do logo */
+  --primary-accent: #00e5ff; /* Ciano néon do logo */
+  --text-light: #E0E5F0;
+  --text-muted: #8A94A6;
+  --panel-bg: rgba(255, 255, 255, 0.03);
+  --panel-border: rgba(0, 229, 255, 0.1);
+  --radius: 8px;
+  --container-max: 1180px;
+  --transition: 300ms ease-out;
+}
+
+/* === RESET E BASE === */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+html {
+  scroll-behavior: smooth;
+}
+body {
+  font-family: 'Inter', sans-serif;
+  background-color: var(--bg-dark);
+  color: var(--text-light);
+  line-height: 1.6;
+  -webkit-font-smoothing: antialiased;
+}
+.container {
+  width: 100%;
+  max-width: var(--container-max);
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+/* === CABEÇALHO === */
+.site-header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000;
+  padding: 15px 0;
+  background: rgba(11, 16, 29, 0.6);
+  backdrop-filter: blur(10px);
+  border-bottom: 1px solid var(--panel-border);
+}
+.header-inner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.logo-img {
+  height: 50px; /* Ajuste este valor se necessário */
+  width: auto;
+}
+.nav-list {
+  display: flex;
+  gap: 25px;
+  list-style: none;
+}
+.nav-list a {
+  color: var(--text-muted);
+  text-decoration: none;
+  font-weight: 500;
+  transition: color var(--transition);
+}
+.nav-list a:hover {
+  color: var(--primary-accent);
+}
+
+/* === SEÇÃO HERO === */
+.hero {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 120px 0 60px;
+  background: radial-gradient(ellipse at top, rgba(0, 229, 255, 0.08), transparent 50%),
+              radial-gradient(ellipse at bottom, rgba(0, 229, 255, 0.05), transparent 60%);
+}
+.hero-title {
+  font-family: 'Orbitron', sans-serif;
+  font-size: clamp(2.5rem, 6vw, 4rem);
+  color: var(--text-light);
+  letter-spacing: 1px;
+}
+.hero-subtitle {
+  font-family: 'Orbitron', sans-serif;
+  font-size: clamp(1.2rem, 3vw, 1.8rem);
+  color: var(--primary-accent);
+  text-shadow: 0 0 15px rgba(0, 229, 255, 0.3);
+  margin-top: -10px;
+}
+.hero-description {
+  max-width: 650px;
+  margin: 20px auto 30px;
+  font-size: 1.1rem;
+  color: var(--text-muted);
+}
+.hero-actions {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+}
+
+/* === ESTILOS GERAIS DE SEÇÃO === */
+.section {
+  padding: 80px 0;
+}
+.section-title {
+  font-family: 'Orbitron', sans-serif;
+  font-size: clamp(1.8rem, 4vw, 2.5rem);
+  text-align: center;
+  margin-bottom: 50px;
+  color: var(--text-light);
+}
+.section-subtitle {
+  text-align: center;
+  max-width: 600px;
+  margin: -40px auto 50px;
+  color: var(--text-muted);
+}
+
+/* === SEÇÃO DE SERVIÇOS === */
+.services-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 25px;
+}
+.service-card {
+  background: var(--panel-bg);
+  border: 1px solid var(--panel-border);
+  border-radius: var(--radius);
+  padding: 30px;
+  text-align: center;
+  transition: transform var(--transition), box-shadow var(--transition);
+}
+.service-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+  border-color: rgba(0, 229, 255, 0.3);
+}
+.service-icon {
+  margin-bottom: 20px;
+}
+.service-icon svg {
+  width: 40px;
+  height: 40px;
+  color: var(--primary-accent);
+}
+.service-title {
+  font-family: 'Orbitron', sans-serif;
+  font-size: 1.3rem;
+  margin-bottom: 10px;
+  color: var(--text-light);
+}
+.service-description {
+  color: var(--text-muted);
+  font-size: 0.95rem;
+}
+
+/* === SEÇÃO DE PORTFÓLIO === */
+.project-card {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  align-items: center;
+  gap: 40px;
+  background: var(--panel-bg);
+  border: 1px solid var(--panel-border);
+  border-radius: var(--radius);
+  padding: 30px;
+  overflow: hidden;
+}
+.project-image-wrapper img {
+  width: 100%;
+  height: auto;
+  border-radius: var(--radius);
+  transition: transform var(--transition);
+}
+.project-image-wrapper img:hover {
+  transform: scale(1.05);
+}
+.project-title {
+  font-family: 'Orbitron', sans-serif;
+  font-size: 1.6rem;
+  color: var(--text-light);
+  margin-bottom: 15px;
+}
+.project-description {
+  color: var(--text-muted);
+  margin-bottom: 25px;
+}
+.project-tech-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-bottom: 25px;
+}
+.project-tech-tags span {
+  background-color: rgba(0, 229, 255, 0.1);
+  color: var(--primary-accent);
+  padding: 5px 12px;
+  border-radius: 20px;
+  font-size: 0.8rem;
+  font-weight: 500;
+}
+.project-links a {
+  margin-right: 10px;
+}
+
+/* === SEÇÃO DE CONTATO === */
+.contact-form {
+  max-width: 700px;
+  margin: 0 auto;
+  background: var(--panel-bg);
+  border: 1px solid var(--panel-border);
+  border-radius: var(--radius);
+  padding: 30px;
+}
+.form-group {
+  margin-bottom: 20px;
+}
+.form-group label {
+  display: block;
+  margin-bottom: 8px;
+  font-weight: 500;
+  color: var(--text-light);
+}
+.form-input,
+.form-textarea {
+  width: 100%;
+  background-color: var(--bg-dark);
+  border: 1px solid var(--panel-border);
+  border-radius: var(--radius);
+  padding: 12px;
+  color: var(--text-light);
+  font-family: 'Inter', sans-serif;
+  font-size: 1rem;
+  transition: border-color var(--transition), box-shadow var(--transition);
+}
+.form-input:focus,
+.form-textarea:focus {
+  outline: none;
+  border-color: var(--primary-accent);
+  box-shadow: 0 0 10px rgba(0, 229, 255, 0.2);
+}
+.form-textarea {
+  resize: vertical;
+  min-height: 120px;
+}
+.form-actions {
+  text-align: center;
+}
+
+/* === COMPONENTES GERAIS (BOTÕES) === */
+.btn {
+  display: inline-flex;
+  padding: 12px 28px;
+  border-radius: 50px;
+  font-weight: 700;
+  text-decoration: none;
+  border: 2px solid transparent;
+  transition: all var(--transition);
+}
+.btn.primary {
+  background-color: var(--primary-accent);
+  color: var(--bg-dark);
+}
+.btn.primary:hover {
+  background-color: transparent;
+  border-color: var(--primary-accent);
+  color: var(--primary-accent);
+  transform: translateY(-3px);
+}
+.btn.ghost {
+  background-color: transparent;
+  border-color: var(--panel-border);
+  color: var(--text-light);
+}
+.btn.ghost:hover {
+  border-color: var(--primary-accent);
+  color: var(--primary-accent);
+  transform: translateY(-3px);
+}
+
+/* === RODAPÉ === */
+.site-footer {
+  padding: 25px 0;
+  border-top: 1px solid var(--panel-border);
+  margin-top: 20px;
+}
+.footer-inner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: var(--text-muted);
+  font-size: 0.9rem;
+}
+.footer-brand {
+  font-family: 'Orbitron', sans-serif;
+  font-weight: 600;
+}
+
+/* === RESPONSIVIDADE === */
+@media (max-width: 900px) {
+  .project-card {
+    grid-template-columns: 1fr; /* Coluna única em telas menores */
+    text-align: center;
+  }
+  .project-details {
+    order: -1; /* Coloca o texto antes da imagem em telas menores */
+  }
+  .project-tech-tags, .project-links {
+    justify-content: center;
+  }
+}
+
+@media (max-width: 768px) {
+  .nav-list {
+    display: none; /* Esconder o menu desktop em telas menores (adicionaremos o menu hambúrguer depois) */
+  }
+  .footer-inner {
+    flex-direction: column;
+    gap: 10px;
+  }
+}
