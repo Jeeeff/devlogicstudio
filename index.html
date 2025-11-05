@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="DevLogic Studio - Desenvolvimento web profissional, APIs RESTful, sites responsivos e otimização SEO.">
+  <title>DevLogic Studio | Desenvolvimento Web & APIs</title>
+  
+  <!-- Fontes -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Orbitron:wght@700;800;900&display=swap" rel="stylesheet">
+  
+  <!-- CSS -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- === CABEÇALHO === -->
+  <header class="site-header" id="header">
+    <div class="container">
+      <div class="header-inner">
+        <a href="#hero" class="logo-link">
+          <img src="imagens/logo.png" alt="Logo da DevLogic Studio" class="logo-img">
+        </a>
+        
+        <nav class="nav-desktop">
+          <ul class="nav-list">
+            <li><a href="#servicos">Serviços</a></li>
+            <li><a href="#tecnologias">Tecnologias</a></li>
+            <li><a href="#portfolio">Portfólio</a></li>
+            <li><a href="#contato">Contato</a></li>
+          </ul>
+        </nav>
+
+        <button class="mobile-menu-toggle" id="mobileMenuToggle" aria-label="Abrir menu">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Menu Mobile -->
+  <div class="mobile-menu" id="mobileMenu">
+    <ul class="mobile-nav-list">
+      <li><a href="#servicos" class="mobile-nav-link">Serviços</a></li>
+      <li><a href="#tecnologias" class="mobile-nav-link">Tecnologias</a></li>
+      <li><a href="#portfolio" class="mobile-nav-link">Portfólio</a></li>
+      <li><a href="#contato" class="mobile-nav-link">Contato</a></li>
+    </ul>
+  </div>
+
+  <!-- === HERO === -->
+  <section class="hero" id="hero">
+    <div class="container">
+      <h1 class="hero-title">DevLogic Studio</h1>
+      <p class="hero-subtitle">Transformando Ideias em Realidade Digital</p>
+      <p class="hero-description">
+        Crio sites rápidos, modernos e otimizados que ajudam o seu negócio a crescer na internet.
+        Especializado em desenvolvimento back-end, APIs RESTful e sistemas web completos.
+      </p>
+      <div class="hero-actions">
+        <a href="#portfolio" class="btn primary">Ver Projetos</a>
+        <a href="#contato" class="btn ghost">Fale Comigo</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- === SERVIÇOS === -->
+  <section class="section services" id="servicos">
+    <div class="container">
+      <h2 class="section-title">Serviços Oferecidos</h2>
+      <div class="services-grid">
+        
+        <div class="service-card">
+          <div class="service-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.75 17L9 20l-1 1h8l-1-1-.75-3M3 13h18M5 17h14a2 2 0 002-2V5a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
+            </svg>
+          </div>
+          <h3 class="service-title">Sites e Landing Pages</h3>
+          <p class="service-description">
+            Desenvolvo sites institucionais e landing pages de alta conversão, com design responsivo que funciona perfeitamente em qualquer dispositivo.
+          </p>
+        </div>
+
+        <div class="service-card">
+          <div class="service-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 9l3 3-3 3m5 0h3M5 20h14a2 2 0 002-2V6a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z" />
+            </svg>
+          </div>
+          <h3 class="service-title">APIs RESTful</h3>
+          <p class="service-description">
+            Construo APIs robustas e escaláveis com autenticação JWT, documentação completa e integração com bancos de dados relacionais e NoSQL.
+          </p>
+        </div>
+
+        <div class="service-card">
+          <div class="service-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
+            </svg>
+          </div>
+          <h3 class="service-title">Otimização SEO</h3>
+          <p class="service-description">
+            Implemento as melhores práticas de SEO para que o seu site seja encontrado mais facilmente no Google, atraindo mais visitantes e potenciais clientes.
+          </p>
+        </div>
+
+        <div class="service-card">
+          <div class="service-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-2.293 2.293c-.63.63-.184 1.707.707 1.707H17m0 0a2 2 0 100 4 2 2 0 000-4zm-8 2a2 2 0 11-4 0 2 2 0 014 0z" />
+            </svg>
+          </div>
+          <h3 class="service-title">Lojas Virtuais (E-commerce)</h3>
+          <p class="service-description">
+            Crio lojas online completas e fáceis de gerir, integradas com as principais plataformas de pagamento, para que você possa vender os seus produtos 24/7.
+          </p>
+        </div>
+
+        <div class="service-card">
+          <div class="service-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z" />
+            </svg>
+          </div>
+          <h3 class="service-title">Otimização de Performance</h3>
+          <p class="service-description">
+            Analiso e otimizo o seu site existente para que ele carregue mais rápido, melhorando a experiência do utilizador e o seu ranking no Google.
+          </p>
+        </div>
+
+        <div class="service-card">
+          <div class="service-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M11 5H6a2 2 0 00-2 2v11a2 2 0 002 2h11a2 2 0 002-2v-5m-1.414-9.414a2 2 0 112.828 2.828L11.828 15H9v-2.828l8.586-8.586z" />
+            </svg>
+          </div>
+          <h3 class="service-title">Blogs e Gestão de Conteúdo</h3>
+          <p class="service-description">
+            Integro sistemas de gestão de conteúdo (CMS) personalizados, permitindo que você crie e publique artigos de blog de forma autónoma e intuitiva.
+          </p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- === TECNOLOGIAS === -->
+  <section class="section technologies" id="tecnologias">
+    <div class="container">
+      <h2 class="section-title">Tecnologias & Ferramentas</h2>
+      <p class="section-subtitle">Stack tecnológico que utilizo para criar soluções robustas e escaláveis</p>
+      
+      <div class="tech-grid">
+        <div class="tech-item">
+          <div class="tech-icon">💚</div>
+          <div class="tech-name">Node.js</div>
+        </div>
+        <div class="tech-item">
+          <div class="tech-icon">⚡</div>
+          <div class="tech-name">Express.js</div>
+        </div>
+        <div class="tech-item">
+          <div class="tech-icon">🐍</div>
+          <div class="tech-name">Python/Flask</div>
+        </div>
+        <div class="tech-item">
+          <div class="tech-icon">🐘</div>
+          <div class="tech-name">PostgreSQL</div>
+        </div>
+        <div class="tech-item">
+          <div class="tech-icon">🍃</div>
+          <div class="tech-name">MongoDB</div>
+        </div>
+        <div class="tech-item">
+          <div class="tech-icon">⚛️</div>
+          <div class="tech-name">React</div>
+        </div>
+        <div class="tech-item">
+          <div class="tech-icon">🎨</div>
+          <div class="tech-name">HTML/CSS/JS</div>
+        </div>
+        <div class="tech-item">
+          <div class="tech-icon">🔐</div>
+          <div class="tech-name">JWT</div>
+        </div>
+        <div class="tech-item">
+          <div class="tech-icon">🐙</div>
+          <div class="tech-name">Git/GitHub</div>
+        </div>
+        <div class="tech-item">
+          <div class="tech-icon">🌐</div>
+          <div class="tech-name">REST API</div>
+        </div>
+        <div class="tech-item">
+          <div class="tech-icon">🎯</div>
+          <div class="tech-name">Bootstrap</div>
+        </div>
+        <div class="tech-item">
+          <div class="tech-icon">☁️</div>
+          <div class="tech-name">Cloudinary</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- === PORTFÓLIO === -->
+  <section class="section portfolio" id="portfolio">
+    <div class="container">
+      <h2 class="section-title">Meus Projetos</h2>
+
+      <!-- Projeto 1: NexusPlay -->
+      <div class="project-card">
+        <div class="project-image-wrapper">
+          <img src="imagens/projeto-nexusplay.jpg" alt="Visualização do site NexusPlay em múltiplos dispositivos">
+        </div>
+        <div class="project-details">
+          <h3 class="project-title">NexusPlay - Landing Page para Serviço de IPTV</h3>
+          <p class="project-description">
+            Criação de uma landing page completa e futurista para um serviço de IPTV. O projeto incluiu design responsivo,
+            otimização de SEO inicial e uma estrutura clara focada na conversão de novos clientes. Interface moderna com
+            gradientes néon, animações suaves e call-to-actions estrategicamente posicionados.
+          </p>
+          <div class="project-tech-tags">
+            <span>HTML5</span>
+            <span>CSS3</span>
+            <span>JavaScript</span>
+            <span>SEO</span>
+            <span>Responsive Design</span>
+          </div>
+          <div class="project-links">
+            <a href="https://nexusplay-iptv.netlify.app" class="btn primary btn-sm" target="_blank" rel="noopener">Ver Site Ao Vivo</a>
+            <a href="https://github.com/seu-usuario/nexusplay" class="btn ghost btn-sm" target="_blank" rel="noopener">Ver Código</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Projeto 2: Gerenciador de Tarefas DevLogic -->
+      <div class="project-card">
+        <div class="project-details">
+          <h3 class="project-title">Gerenciador de Tarefas DevLogic</h3>
+          <p class="project-description">
+            Aplicação full-stack completa para gerenciamento de tarefas com autenticação JWT, CRUD completo,
+            filtros avançados e interface moderna com tema dark. Sistema de login/registro seguro, dashboard
+            interativo com estatísticas em tempo real, sincronização automática com API REST em Flask e PostgreSQL.
+          </p>
+          <div class="project-tech-tags">
+            <span>HTML5</span>
+            <span>CSS3</span>
+            <span>JavaScript</span>
+            <span>Flask API</span>
+            <span>PostgreSQL</span>
+            <span>JWT Auth</span>
+            <span>REST API</span>
+          </div>
+          <div class="project-links">
+            <a href="https://gerenciador-tarefas-frontend-tt7d.onrender.com" class="btn primary btn-sm" target="_blank" rel="noopener">Ver Aplicação</a>
+            <a href="https://github.com/Jeeeff/frontend-tarefas" class="btn ghost btn-sm" target="_blank" rel="noopener">Ver Código</a>
+          </div>
+        </div>
+        <div class="project-image-wrapper">
+          <img src="imagens/projeto-gerenciador-tarefas.jpeg" alt="Interface do Gerenciador de Tarefas DevLogic">
+        </div>
+      </div>
+
+      <!-- Projeto 3: Sistema de Blog -->
+      <div class="project-card">
+        <div class="project-image-wrapper">
+          <img src="imagens/projeto-blog.jpg" alt="Interface do Sistema de Blog com painel administrativo">
+        </div>
+        <div class="project-details">
+          <h3 class="project-title">Sistema de Blog com Painel Admin</h3>
+          <p class="project-description">
+            Blog completo com painel administrativo, upload de imagens para Cloudinary, sistema de categorias e tags,
+            editor de texto rico (WYSIWYG), busca avançada e paginação. Interface intuitiva tanto para leitores quanto
+            para administradores.
+          </p>
+          <div class="project-tech-tags">
+            <span>React</span>
+            <span>Node.js</span>
+            <span>MongoDB</span>
+            <span>Cloudinary</span>
+            <span>Rich Text Editor</span>
+            <span>Authentication</span>
+          </div>
+          <div class="project-links">
+            <a href="#" class="btn primary btn-sm">Ver Demo</a>
+            <a href="#" class="btn ghost btn-sm">Ver Código</a>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- === CONTATO === -->
+  <section class="section contact" id="contato">
+    <div class="container">
+      <h2 class="section-title">Vamos Conversar</h2>
+      <p class="section-subtitle">Tem um projeto em mente ou alguma dúvida? Preencha o formulário abaixo e retornarei o mais breve possível.</p>
+      
+      <form class="contact-form" id="contactForm">
+        <div class="form-group">
+          <label for="name">Nome</label>
+          <input type="text" id="name" name="name" class="form-input" required>
+        </div>
+        <div class="form-group">
+          <label for="email">Email</label>
+          <input type="email" id="email" name="email" class="form-input" required>
+        </div>
+        <div class="form-group">
+          <label for="message">Mensagem</label>
+          <textarea id="message" name="message" class="form-textarea" required></textarea>
+        </div>
+        <div class="form-actions">
+          <button type="submit" class="btn primary">Enviar Mensagem</button>
+        </div>
+      </form>
+    </div>
+  </section>
+
+  <!-- === RODAPÉ === -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-inner">
+        <div class="footer-brand">DevLogic Studio</div>
+        <div class="footer-copy">&copy; <span id="year"></span> — Todos os direitos reservados.</div>
+        <div class="footer-social">
+          <!-- Adicione seus links de redes sociais aqui -->
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
